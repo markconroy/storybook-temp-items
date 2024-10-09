@@ -1,0 +1,21 @@
+{
+  "title": "Components/Examples/Card",
+  "parameters": {
+    "server": { "url": "https://localgov.ddev.site/storybook/stories/render" }
+  },
+  "stories": [
+    {
+      "name": "1. Default",
+      "args": {
+        "cardHeader": "I am a header!",
+        "buttonText": "Learn more",
+        "buttonIconType": "power"
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL21hcmtmaW5udGFuY1wvdGVtcGxhdGVzXC9zdG9yaWVzXC9teS1jYXJkLnN0b3JpZXMudHdpZyIsImlkIjoiZGVmYXVsdCJ9"
+        }
+      }
+    }
+  ]
+}

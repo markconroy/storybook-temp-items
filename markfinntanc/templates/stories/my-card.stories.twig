@@ -1,0 +1,18 @@
+{# some/path/in/your/code/base/my-card.stories.twig #}
+{% stories my_card with { title: 'Components/Examples/Card' } %}
+
+  {% story default with {
+    name: '1. Default',
+    args: { cardHeader: 'I am a header!', buttonText: 'Learn more', buttonIconType: 'power' }
+  } %}
+    {# Write any Twig for the "default" story. The `args` above will be made #}
+    {# available as variables for the template 👇 #}
+    {% embed 'my-card.html.twig' with { header: cardHeader } %}
+      {% block card_body %}
+        <p>I am the <em>card</em> contents.</p>
+        <a href="#">Read more</a>
+      {% endblock %}
+    {% endembed %}
+  {% endstory %}
+
+{% endstories %}
